@@ -1,6 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
 /*
 	Industrious by TEMPLATED
 	templated.co @templatedco
@@ -125,15 +126,21 @@ body, input, select, textarea {
   text-decoration: none;
   background-image: linear-gradient(rgb(17, 17, 17), rgb(17, 17, 17)),
     linear-gradient(#ce1b28, #ce1b28);
-  background-size: 100% 2px, 0 2px;
+  background-size: 100% 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
 }
 
  a:hover {
-  background-size: 0 2px, 100% 2px;
+  background-size: 0 1px, 100% 1px;
+  padding-top: px;
 }
+
+.highlights > section > a > p > a {
+   background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+}
+
  a:hover {
     text-decoration: none; }
 
@@ -680,6 +687,12 @@ table.alt tbody tr td {
   border-color: rgba(0, 0, 0, 0.25); }
 
 /* Highlights */
+.highlights > section > a > p:hover {
+  background-color:#A4AAAE; ;
+  border: 5px;  
+}
+
+
 .highlights {
   width: 100%;
   margin: 2.5rem 0;
@@ -2090,7 +2103,7 @@ ul.icons {
   position: relative;
   text-align: center;
   z-index: 1; }
-  #cta input, #cta select, #cta textarea {
+      #cta input, #cta select, #cta textarea {
     color: #ffffff; }
   #cta a {
     color: #ffffff; }
@@ -2105,26 +2118,11 @@ ul.icons {
     border-color: rgba(255, 255, 255, 0.25); }
   #cta hr {
     border-bottom-color: rgba(255, 255, 255, 0.25); }
-  #cta input[type="submit"],
-  #cta input[type="reset"],
-  #cta input[type="button"],
-  #cta button,
-  #cta .button {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 1px #ffffff;
-    color: #ffffff !important; }
-    #cta input[type="submit"]:hover,
-    #cta input[type="reset"]:hover,
-    #cta input[type="button"]:hover,
-    #cta button:hover,
-    #cta .button:hover {
-      background-color: rgba(255, 255, 255, 0.1); }
-      #cta input[type="submit"]:hover:active,
-      #cta input[type="reset"]:hover:active,
-      #cta input[type="button"]:hover:active,
-      #cta button:hover:active,
-      #cta .button:hover:active {
-        background-color: rgba(255, 255, 255, 0.25); }
+
+
+
+
+
     #cta input[type="submit"].primary,
     #cta input[type="reset"].primary,
     #cta input[type="button"].primary,
@@ -2146,7 +2144,7 @@ ul.icons {
         #cta button.primary:hover:active,
         #cta .button.primary:hover:active {
           background-color: rgba(255, 255, 255, 0.5); }
-  #cta label {
+            #cta label {
     color: #ffffff; }
   #cta input[type="text"],
   #cta input[type="password"],
@@ -2154,8 +2152,7 @@ ul.icons {
   #cta input[type="tel"],
   #cta input[type="search"],
   #cta input[type="url"],
-  #cta select,
-  #cta textarea {
+  #cta select,  #cta textarea {
     background-color: rgba(255, 255, 255, 0.075);
     border-color: rgba(255, 255, 255, 0.25); }
     #cta input[type="text"]:focus,
@@ -2426,6 +2423,9 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.05; }
+
+.vl {
+}
 
 .fa-car {
   color:#000000;
