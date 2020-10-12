@@ -2091,7 +2091,7 @@ ul.icons {
   body.is-preload #banner:before {
     opacity: 1; }
 
-/* CTA */
+/* cta */
 #cta {
   background-color: #ce1b28;
   color: rgba(255, 255, 255, 0.75);
@@ -2104,13 +2104,13 @@ ul.icons {
   text-align: center;
   z-index: 1; }
       #cta input, #cta select, #cta textarea {
-    color: #ffffff; }
+    color: black; }
   #cta a {
-    color: #ffffff; }
+    color: black; }
   #cta strong, #cta b {
-    color: #ffffff; }
+    color: black; }
   #cta h1, #cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
-    color: #ffffff; }
+    color: black; }
   #cta blockquote {
     border-left-color: rgba(255, 255, 255, 0.25); }
   #cta code {
@@ -2123,8 +2123,8 @@ ul.icons {
 
 
 
-    #cta input[type="submit"].primary,
-    #cta input[type="reset"].primary,
+    #cta-1 input[type="submit"].primary,
+    #cta-1 input[type="reset"].primary,
     #cta input[type="button"].primary,
     #cta button.primary,
     #cta .button.primary {
