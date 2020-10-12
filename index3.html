@@ -1,216 +1,120 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Infinite Flickity Slider Test</title>
-
-  <link rel="stylesheet" href="flickity/flickity.css">
+  <title></title>
 </head>
-
-<style>
-
-  html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-.cf:before,
-.cf:after {
-  display: table;
-  content: ' ';
-}
-.cf:after {
-  clear: both;
-}
-.cf {
-  *zoom: 1;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-figure {
-  margin: 0;
-  padding: 10px;
-}
-figure a {
-  display: block;
-}
-mark {
-  padding: 0 5px;
-  background-color: #dddddd;
-}
-::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.site-content {
-	text-align: left;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	padding-right: 5%; 
-	padding-left: 5%;
-	margin-bottom: 90px;
-}
-
-.card {
-	width: 100%;
-	background-color: #fff;
-	text-align: left;
-	position: relative;
-	height: 100%;
-	box-shadow: 0px 2px 6px 0px rgba(204,209,217,.5);
-	border: 1px solid #E6E9ED;
-}
-
-.courses {
-	margin-top: 30px;
-	margin-bottom: 60px;
-}
-.course-item {
-	width: 33%;
-	padding-right: 2%;
-	padding-left: 2%;
-	margin-bottom: 30px;
-
-	/* ensuring proper layout*/
-	float: left;
-}
-.course-info {
-	padding: 7%;
-	min-height: 140px;
-}
-.course-topic {
-	font-weight: 500;
-	color: #AAB2BD;
-	font-size: 22px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-.course-topic.photo {
-	color: #673AB7;
-}
-.course-topic.webdesign {
-	color: #009688;
-}
-.course-topic.computer {
-	color: #2196F3;
-}
-.course-topic.code {
-	color: #4CAF50;
-}
-.course-topic.design {
-	color: #F44336;
-}
-.course-title {
-	font-weight: 500;
-	font-size: 14px;
-  margin: 0 0 30%;
-  text-align: center;
-}
-.course-meta {
-	color: #AAB2BD;
-	font-weight: 300;
-	font-size: 11px;
-	position: absolute;
-	left: 7%;
-	bottom: 7%;
-}
-.course-duration:before {
-	display: inline-block;
-	content: "•";
-	padding-right: 5px;
-	padding-left: 5px;
-}
-.course-caption {
-	position: absolute;
-	right: 5%;
-	bottom: 5%;
-	font-size: 18px;
-	color: #AAB2BD;
-  
-}
-</style>
-
 <body>
-  <div class="site-content cf">
 
-    <div class="courses cf" id="showcase" data-flickity='{ "wrapAround": true }'>
+<link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
+<script type="text/javascript" src="assets/js/carousel.js"></script>
+<div class="row">
 
-      <div class="course-item slide">
-        <div class="course-summary card">
-          <div class="course-thumbnail">
-            <img src="images/car2.jpg" height="277" width="400" alt="image">
-          </div>
-          <div class="course-info">
-            <div class="course-topic webdesign">Mercedes hij</div>
-            <h3 class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, provident.</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-item slide">
-        <div class="course-summary card">
-          <div class="course-thumbnail">
-            <img src="images/car3.jpg" height="277" width="400" alt="">
-          </div>
-          <div class="course-info">
-            <div class="course-topic webdesign">Mercedes abc</div>
-            <h3 class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <div class="course-meta">
-              <time class="course-date">Version</time>
-              <span class="course-duration">3</span>
-            </div>
-          </div>
-          <span class="course-caption ion ion-closed-captioning"></span>
-        </div>
-      </div>
-
-      <div class="course-item slide">
-        <div class="course-summary card">
-          <div class="course-thumbnail">
-            <img src="images/car1.jpg" height="277" width="400" alt="TextEdit Image">
-          </div>
-          <div class="course-info">
-            <div class="course-topic code">Mercedes Dfg</div>
-            <h3 class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <div class="course-meta">
-            </div>
-          </div>
-          <span class="course-caption ion ion-closed-captioning"></span>
-        </div>
-      </div>
-
-      <div class="course-item slide">
-        <div class="course-summary card">
-          <div class="course-thumbnail">
-            <img src="images/car1.jpg" height="277" width="400" alt="TextEdit Image">
-          </div>
-          <div class="course-info">
-            <div class="course-topic code">Mercedes Dfg</div>
-            <h3 class="course-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <div class="course-meta">
-            </div>
-          </div>
-          <span class="course-caption ion ion-closed-captioning"></span>
-        </div>
-      </div>
-    </div>
+  <div class="customNavigation">
+    <a class="btn gray prev"><i class="icon ion-ios-arrow-left"></i></a>
+    <a class="btn gray next"><i class="icon ion-ios-arrow-right"></i></a>
   </div>
 
-  <script src="flickity/flickity.pkgd.js"></script>
 
-</script>
+  <div id="slider-carousel" class="owl-carousel">
+    <div class="item">
+      <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="icon ion-search"></i>
+        </div>
+        <div class="figure">
+          <i class="icon ion-link"></i>
+        </div>
+        <div class="overlay">
+        </div>
+        <img src="http://dummyimage.com/350x300/f0f0f0/333">
+      </a>
+      <h4>Lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+    </div>
+
+    <div class="item">
+      <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="icon ion-search"></i>
+        </div>
+        <div class="figure">
+          <i class="icon ion-link"></i>
+        </div>
+        <div class="overlay">
+        </div>
+        <img src="http://dummyimage.com/350x300/f0f0f0/333">
+      </a>
+      <h4>Lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+    </div>
+
+    <div class="item">
+      <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="icon ion-search"></i>
+        </div>
+        <div class="figure">
+          <i class="icon ion-link"></i>
+        </div>
+        <div class="overlay">
+        </div>
+        <img src="http://dummyimage.com/350x300/f0f0f0/333">
+      </a>
+      <h4>Lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+    </div>
+
+    <div class="item">
+      <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="icon ion-search"></i>
+        </div>
+        <div class="figure">
+          <i class="icon ion-link"></i>
+        </div>
+        <div class="overlay">
+        </div>
+        <img src="http://dummyimage.com/350x300/f0f0f0/333">
+      </a>
+      <h4>Lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+    </div>
+
+    <div class="item">
+      <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="icon ion-search"></i>
+        </div>
+        <div class="figure">
+          <i class="icon ion-link"></i>
+        </div>
+        <div class="overlay">
+        </div>
+        <img src="http://dummyimage.com/350x300/f0f0f0/333">
+      </a>
+      <h4>Lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+    </div>
+
+    <div class="item">
+      <a class="hoverfx" href="#">
+        <div class="figure">
+          <i class="icon ion-search"></i>
+        </div>
+        <div class="figure">
+          <i class="icon ion-link"></i>
+        </div>
+        <div class="overlay">
+        </div>
+        <img src="http://dummyimage.com/350x300/f0f0f0/333">
+      </a>
+      <h4>Lorem ipsum</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+    </div>
+
+  </div>
+
+</div>
 
 </body>
-
 </html>
-
-body {
-}

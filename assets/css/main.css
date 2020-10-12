@@ -2111,14 +2111,6 @@ ul.icons {
     color: black; }
   #cta h1, #cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
     color: black; }
-
-  @media screen and (max-width: 1080px) {
-    #cta h1, #cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
-     color: black;
-     font-size: 12px;
-    }
-
-
   #cta blockquote {
     border-left-color: rgba(255, 255, 255, 0.25); }
   #cta code {
@@ -2226,7 +2218,7 @@ ul.icons {
       color: #ce1b28; }
   #cta .inner {
     position: relative;
- }
+    z-index: 3; }
   @media screen and (max-width: 980px) {
     #cta {
       background-attachment: scroll; } }
